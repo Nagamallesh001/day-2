@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="key words" content="html css what's_app">
+    <title>What's app web page</title>
+    <style>
+      .head1 {
+        position: fixed;
+        border: 1px solid green;
+        height: 725px;
+        width: 390px;
+        overflow: scroll;
+        top: 47px;
+      }
+      .head2 {
+        border: 1px solid green;
+        position: relative;
+        top: 24px;
+        border: 1px;
+        height: 45px;
+        width: 392px;
+        background-color: rgb(103, 110, 103);
+        color: white;
+        margin-top: -21px;
+        margin-left: -1px;
+        position: fixed;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;        
+      }
+      .img1 {
+        position: relative;
+        bottom: 15px;
+        border-radius: 30px;
+        bottom: 103px;
+        left: 30px;
+      }
+      .name {
+        position: relative;
+        text-align: center;
+        bottom: 155px;
+        right: 72px;
+        color: rgb(225, 230, 222);        
+      }
+      .head4 {
+        margin-top: -20px;
+        margin-left: -80px;
+        opacity: 0.8;
+      }
+      .arrow {
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+      }
+      .ph {
+        position: relative;
+        bottom: 50px;
+        left: 200px;
+      }
+      .option {
+        position: relative;
+        left: 37px;
+        bottom: 18px;
+      }
+      .bgi {
+        background-image: url(https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg);
+        background-attachment: fixed;
+        bottom: 1px;
+      }
+      .text {
+        border: 1px solid black;
+        height: 10px;
+        width: 20px;
+      }
+      h4 {
+        background-color: rgb(185, 203, 205);
+        height: 18px;
+        width: 55px;
+        position: relative;
+        left: 130px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 10px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        padding-top: 6px;
+        position: sticky;
+        top: 1px;
+      }
+      .nam {
+        position: sticky;
+      }
+      .type {
+        position: relative;
+        position: fixed;
+        top: 725px;
+        left: 510px;
+
+        height: 30px;
+        width: 250px;
+
+        border-radius: 10px;
+      }
+      .video {
+        width: 40px;
+        height: 30px;
+        position: relative;
+        left: 285px;
+        top: 15px;
+      }
+      .sub1 {
+        font-size: 8px;
+        color: gray;
+        margin-left: 4px;
+      }
+      .date {
+        border: 8px solid rgb(217, 241, 249);
+        background-color: rgb(217, 241, 249);
+        color: rgb(91, 86, 86);
+        left: 140px;
+        text-align: center;
+        font-size: 10px;
+        height: 1px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 75px;
+        border-radius: 8px;
+        position: sticky;
+        top: 9px;
+        padding-bottom: 5px;
+      }
+      .sm {
+        width: 40px;
+        left: 160px;
+      }
+      .typeing p {
+        border: 1px solid white;
+        background-color: rgb(230, 225, 225);
+        font-size: 16px;
+        height: 20px;
+        border-radius: 5px;
+        padding-left: 10px;
+        display: inline-block;
+        position: relative;
+        left: 15px;
+      }
+      .rupe {
+        border-radius: 50%;
+        height: 19px;
+        opacity: 0.7;
+        width: 19px;
+        position: relative;
+        position: fixed;
+        top: 728px;
+        left: 775px;
+      }
+      .textimg {
+        border: 4px solid white;
+        margin-left: 20px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      .down,
+      .downblr {
+        position: relative;
+        position: fixed;
+        top: 718px;
+        border: 1px solid white;
+        background-color: rgb(255, 255, 255);
+        border-radius: 23px;
+        height: 40px;
+        width: 335px;
+      }
+      .downblr {
+        width: 389px;
+        border-radius: 0px;
+        background-color: white;
+        box-shadow: 0px 12px 23px 1px black inset;
+      }
+      .camera {
+        position: relative;
+        position: fixed;
+        top: 729px;
+        left: 810px;
+        border-radius: 10px;
+      }
+      .pin {
+        position: relative;
+        position: fixed;
+        top: 725px;
+        left: 735px;
+        border-radius: 10px;
+        color: rgb(112, 105, 105);
+      }
+      .smile {
+        padding-left: 5px;
+        padding-top: 118px;
+        position: fixed;
+        top: 606px;
+        color: gray;
+        font-size: 25px;
+      }
+      .mike {
+        padding-left: 802px;
+        padding-top: 25px;
+        position: fixed;
+        top: 704px;
+        left: 61px;
+        color: white;
+      }
+      .mikebac {
+        position: relative;
+        position: fixed;
+        top: 718px;
+        left: 505px;
+        background-color: rgb(138, 144, 138);
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        margin-left: 345px;
+      }
+      .img4 {
+        margin-left: 280px;
+      }
+      .hello {
+        margin-left: 270px;
+      }
+      .you {
+        margin-left: 150px;
+      }
+      .i {
+        margin-left: 230px;
+      }
+      .sw {
+        margin-left: 135px;
+      }
+      .ifram {
+        border: 5px solid white;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+        left: 15px;
+      }
+      .thank {
+        height: 80px;
+        width: 250px;
+        margin-left: 60px;
+        
+      }
+      .body1{
+        position: relative;
+        left: 500px;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://bit.ly/3OEjolq"
+    />
+    <link
+      href="https://bit.ly/3ux92wU"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body1">
+    <div class="head1">
+      <div class="head2">
+        <div class="video">
+          <i
+            class="fa fa-video-camera"
+            style="font-size: 15px; color: white"
+          ></i>
+        </div>
+        <h1 class="arrow">&#8592;</h1>
+        <img
+          class="img1"
+          src="https://bit.ly/3UAYzLu"
+          height="30px"
+          width="30"
+        />
+        <div class="name">
+          <h3>Naga mallesh</h3>
+          <h6 class="head4">online</h6>
+          <div class="ph">
+            <i class="fa fa-phone" style="font-size: 18px; color: white"></i>
+            <div class="option">
+              <i
+                class="fa fa-ellipsis-v"
+                style="font-size: 17px; color: white"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bgi nam">
+        <div class="typeing">
+          <div>
+            <h1 class="date">January 29,2024</h1>
+            <p>Hi<sub class="sub1">5:07_PM</sub></p>
+            <br />
+            <p class="hello">
+              Kon?<sub class="sub1">5:08_PM&#10003;&#10003;</sub><br />
+            </p>
+            <br />
+            <p>You msg me....<sub class="sub1">5:10_PM</sub><br /></p>
+            <br />
+            <p>What's your name?<sub class="sub1">5:10_PM</sub><br /></p>
+            <br />
+            <p class="you" style="left: 40px">
+              Bye wrong number <sub class="sub1">5:18_PM&#10003;&#10003;</sub
+              ><br />
+            </p>
+            <br />
+          </div>
+          <h1 class="date">January 30,2024</h1>
+          <p>Hi<sub class="sub1">5:07_PM</sub></p>
+          <br />
+          <p class="hello">
+            Hello<sub class="sub1">5:08_PM&#10003;&#10003;</sub><br />
+          </p>
+          <br />
+          <p>What your name?<sub class="sub1">2:09_PM</sub><br /></p>
+          <br />
+          <p class="you" style="left: 100px">
+            Naga..&#128578;<sub class="sub1">2:09_PM&#10003;&#10003;</sub><br />
+          </p>
+          <br />
+        </div>
+        <div class="typeing">
+          <h1 class="date">January 31,2024</h1>
+          <img
+            class="textimg img4"
+            src="https://bit.ly/3wdsWgK"
+            height="100px"
+            width="80px"
+          />
+          <p>Hello bhai<sub class="sub1">5:08_PM</sub><br /></p>
+          <br />
+          <p class="hello">
+            Hi<sub class="sub1">5:10_PM&#10003;&#10003;</sub><br />
+          </p>
+          <br />
+          <p>kaisa h?<sub class="sub1">6:07_PM</sub><br /></p>
+          <br />
+          <p class="you" style="left: 90px">
+            mast hu tu..<sub class="sub1">6:15_PM&#10003;&#10003;</sub><br />
+          </p>
+          <br />
+          <p>
+            Yaar thode paiso ki zarurat thi..&#128524;<sub class="sub1"
+              >6:17_PM</sub
+            ><br />
+          </p>
+          <br />
+        </div>
+        <div class="typeing">
+          <h1 class="date">February 2,2024</h1>
+          <p class="you" style="left: 40px">
+            ha yaar mujhe bhi..<sub class="sub1">6:20_PM&#10003;&#10003;</sub
+            ><br />
+          </p>
+          <br />
+          <p class="you">
+            koi de raha ho to batana<sub class="sub1"
+              >6:22_PM&#10003;&#10003;</sub
+            ><br />
+          </p>
+          <br />
+          <p>Lesson the html class<sub class="sub1">6:27_PM</sub><br /></p>
+          <br />
+          <iframe
+            class="ifram"
+            width="160"
+            height="115"
+            src="https://www.youtube.com/embed/ESnrn1kAD4E?   si=im7kQvcZcC-AT6MI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>HTML CSS tutorial video<sub class="sub1">6:28_PM</sub><br /></p>
+          <br />
+          <p>Ok<sub class="sub1">7:04_PM</sub><br /></p>
+          <br />
+          <img
+            class="textimg img4"
+            src="https://bit.ly/3UBHlxh"
+            height="100px"
+            width="80px"
+          />
+        </div>
+        <div class="typeing">
+          <h1 class="date sm">Sunday</h1>
+          <img
+            class="textimg img4"
+            src="https://bit.ly/3wdsWgK"
+            height="100px"
+            width="80px"
+          />
+          <p>Hello bhai<sub class="sub1">5:08_PM</sub><br /></p>
+          <br />
+          <p class="hello">
+            Hi<sub class="sub1">5:10_PM&#10003;&#10003;</sub><br />
+          </p>
+          <br />
+          <p>kaisa h?<sub class="sub1">6:07_PM</sub><br /></p>
+          <br />
+          <p class="you" style="left: 90px">
+            mast hu tu..<sub class="sub1">6:15_PM&#10003;&#10003;</sub><br />
+          </p>
+          <br />
+          <p>
+            Yaar thode paiso ki zarurat thi..&#128524;<sub class="sub1"
+              >6:17_PM</sub
+            ><br />
+          </p>
+          <br />
+        </div>
+        <div class="typeing">
+          <h1 class="date sm">Yesterday</h1>
+          <p class="you" style="left: 40px">
+            ha yaar mujhe bhi..<sub class="sub1">6:20_PM&#10003;&#10003;</sub
+            ><br />
+          </p>
+          <br />
+          <p class="you">
+            koi de raha ho to batana<sub class="sub1"
+              >6:22_PM&#10003;&#10003;</sub
+            ><br />
+          </p>
+          <br />
+          <p>Lesson the html class <sub class="sub1">6:27_PM</sub><br /></p>
+          <br />
+        </div>
+        <div>
+          <h1 class="date sm">Today</h1>
+          <iframe
+            class="ifram"
+            width="160"
+            height="115"
+            src="https://www.youtube.com/embed/ESnrn1kAD4E?   si=im7kQvcZcC-AT6MI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+          <p>HTML CSS tutorial video<sub class="sub1">6:28_PM</sub><br /></p>
+          <br />
+          <p>Ok<sub class="sub1">7:04_PM</sub><br /></p>
+          <br />
+
+          <img
+            class="textimg img4"
+            src="https://bit.ly/3UBHlxh"
+            height="100px"
+            width="80px"
+          />
+          <h1 class="thank" style="text-align: center">
+            Thank you<br />&#128521;
+          </h1>
+          <h1 class="naga" style="text-align: center">NAGA MALLESH</h1>
+        </div>
+  <footer>
+          <div class="downblr"></div>
+          <div class="down"></div>
+
+          <div class="pin"><i class="material-icons">attachment</i></div>
+          <div>
+            <img
+              class="rupe"
+              src="https://bit.ly/3SDDvRW"
+              height="30px"
+              width="30px"
+            />
+          </div>
+          <div class="camera">
+            <i
+              class="fa fa-camera"
+              style="font-size: 18px; color: rgb(123, 115, 115)"
+            ></i>
+          </div>
+          <div class="mikebac">
+            <div class="mike">
+              <i
+                class="fa fa-microphone"
+                style="font-size: 19px;"
+              ></i>
+            </div>
+          </div>
+          <div class="smile"><i class="fa fa-smile-o"></i></div>
+          <div class="type">
+            <form
+              action="https://www.w3schools.com/html/default.asp"
+              target="_blank"
+            >
+              <label for="text1"></label>
+              &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input
+                type="text"
+                id="text1"
+                name="text1"
+                placeholder="Message"
+                required
+              />
+              <input type="submit" value="&#10003;" style="height: 20px; width: 10px;" />
+            </form>
+          </div>
+ </footer>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
